@@ -1,22 +1,24 @@
 # TicTacToe Remix – Comprehensive Documentation 🎲✨
 
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/your-org/tictactoe-remix/actions)
-[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
-[![Contributors](https://img.shields.io/github/contributors/your-org/tictactoe-remix)](https://github.com/your-org/tictactoe-remix/graphs/contributors)
+[![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61dafb)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Convex](https://img.shields.io/badge/Convex-8D2676?logo=convex&logoColor=white)](https://convex.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38bdf8?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![Vite](https://img.shields.io/badge/Vite-646cff?logo=vite&logoColor=white)](https://vitejs.dev/)
 
 ## Table of Contents
-1. [Overview](#overview)
-2. [Quick Start](#quick-start)
-3. [Goals](#goals)
-4. [Features](#features)
-5. [Architecture & Tech Stack](#architecture--tech-stack)
-6. [Game Rules & Mechanics](#game-rules--mechanics)
-7. [UI/UX & Animation Libraries](#uiux--animation-libraries)
-8. [Development & Project Structure](#development--project-structure)
-9. [Onboarding & Accessibility](#onboarding--accessibility)
-10. [Contribution Guide](#contribution-guide)
-11. [FAQ](#faq)
-12. [Contact & Support](#contact--support)
+1. [Overview](#overview-)
+2. [Quick Start](#quick-start-)
+3. [Goals](#goals-)
+4. [Features](#features-)
+5. [Architecture & Tech Stack](#architecture--tech-stack-)
+6. [Game Rules & Mechanics](#game-rules--mechanics-)
+7. [UI/UX & Animation Libraries](#uiux--animation-libraries-)
+8. [Development & Project Structure](#development--project-structure-)
+9. [Onboarding & Accessibility](#onboarding--accessibility-)
+10. [Contribution Guide](#contribution-guide-)
+11. [FAQ](#faq-)
+12. [Contact & Support](#contact--support-)
 
 ---
 
