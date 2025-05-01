@@ -1,17 +1,39 @@
-# PRD: Multiplayer Tic Tac Toe
+# PRD: TicTacToe Remix
+
+_Last updated: May 1, 2025_
+_Status: In Progress_
+
+**Related docs:** [Development Plan](docs/plan.md) | [README](../README.md)
+
+---
 
 ## 1. Product overview
 
 ### 1.1 Document title and version
 
-- PRD: Multiplayer Tic Tac Toe
+- PRD: TicTacToe Remix
 - Version: 1.0
 
 ### 1.2 Product summary
 
-Multiplayer Tic Tac Toe is a web-based game that reimagines the classic Tic Tac Toe experience by expanding it to support 3-4 players. Unlike traditional Tic Tac Toe which is limited to a 3x3 grid and two players, this version offers larger game boards (4x4 for 3 players, 5x5 for 4 players) and adjusts winning conditions based on player count.
+TicTacToe Remix is a web-based game that reimagines the classic Tic Tac Toe experience by expanding it to support 3-4 players. Unlike traditional Tic Tac Toe which is limited to a 3x3 grid and two players, this version offers larger game boards (4x4 for 3 players, 5x5 for 4 players) and adjusts winning conditions based on player count.
 
 The application uses Convex as its backend to provide real-time updates and synchronization of game state across all players. Users can create new games, join existing ones, and compete with others in real-time.
+
+## 1.3 Enhanced Interactivity and Visual Appeal
+
+To align with modern learning game principles and create a more engaging experience, the following features are planned:
+
+- **Animated Game Board**: Smooth transitions for marker placement, turn changes, and win/draw highlights.
+- **Interactive Feedback**: Hover/tap previews, cell highlights, and celebratory effects for wins/draws.
+- **Move History & Exploration**: Timeline to review previous moves and board states; sandbox mode for experimentation.
+- **Guided Learning Mode**: Challenge puzzles, tiered hints, and post-game explanations to foster learning by doing.
+- **Onboarding & Tutorials**: Interactive walkthrough for new users, explaining rules and mechanics.
+- **Mini-Quizzes & Reflections**: Quick quizzes and prompts after games to reinforce learning and encourage reflection.
+- **Custom Avatars & Colors**: Player customization for avatars and marker colors, with animated turn indicators.
+- **Visual Storytelling**: Progress bars, victory/draw screens, and fun UI elements to create a narrative arc.
+- **Micro-Interactions**: Sound effects, subtle animations, and easter eggs for delight.
+- **Achievements & Rewards**: Badges, streaks, and stats to motivate continued play and mastery.
 
 ## 2. Goals
 
@@ -106,11 +128,23 @@ The application uses Convex as its backend to provide real-time updates and sync
   - Allow players to return to game listing from an active game
   - Support switching between games
 
+- **Enhanced Interactivity & Visuals** (Priority: High)
+  - Animate marker placement, turn changes, and win/draw highlights
+  - Provide interactive feedback on cell hover/tap
+  - Allow users to review move history and experiment in sandbox mode
+  - Offer guided learning mode with hints, explanations, and challenge puzzles
+  - Include onboarding/tutorial overlays for new users
+  - Add mini-quizzes and reflection prompts after games
+  - Support player avatar and color customization
+  - Display progress bars, victory/draw screens, and fun UI elements
+  - Integrate sound effects and micro-interactions
+  - Track achievements, streaks, and player stats
+
 ## 5. User experience
 
 ### 5.1. Entry points & first-time user flow
 
-- User lands on homepage showing the Multiplayer Tic Tac Toe title
+- User lands on homepage showing the TicTacToe Remix title
 - First-time users are prompted to sign in with anonymous authentication
 - After authentication, users see the available games list
 - New users can either join an existing game or create a new one
@@ -141,6 +175,12 @@ The application uses Convex as its backend to provide real-time updates and sync
 ### 5.4. UI/UX highlights
 
 - Color-coded player markers for easy visual differentiation (red, blue, green, gold)
+- Animated transitions for moves, wins, and draws
+- Interactive feedback on cell hover/tap
+- Move history timeline and sandbox mode
+- Guided learning overlays, hints, and explanations
+- Customizable avatars and animated turn indicators
+- Progress bars and visual storytelling elements
 - Real-time updates without requiring page refreshes
 - Responsive design that works on various screen sizes
 - Clear game status indicators (waiting, playing, finished)
@@ -149,7 +189,7 @@ The application uses Convex as its backend to provide real-time updates and sync
 
 ## 6. Narrative
 
-Alex is a casual gamer who wants to play a quick game with two friends during their lunch break. They remember playing Tic Tac Toe as kids but want something that accommodates more than just two players. Alex discovers Multiplayer Tic Tac Toe and creates a 3-player game in seconds. After sharing the link with friends, all three join seamlessly and enjoy the familiar yet fresh experience of playing on a 4x4 grid with new winning patterns, appreciating how the app handles turn management and win detection automatically.
+Alex is a casual gamer who wants to play a quick game with two friends during their lunch break. They remember playing Tic Tac Toe as kids but want something that accommodates more than just two players. Alex discovers TicTacToe Remix and creates a 3-player game in seconds. After sharing the link with friends, all three join seamlessly and enjoy the familiar yet fresh experience of playing on a 4x4 grid with new winning patterns, appreciating how the app handles turn management and win detection automatically.
 
 ## 7. Success metrics
 
@@ -339,3 +379,23 @@ Alex is a casual gamer who wants to play a quick game with two friends during th
   - Game creation, listing, and joining require authentication
   - Game moves can only be made by authenticated participants
   - Backend validates all requests to ensure they come from authorized users
+
+### 10.11. Enhanced interactivity and learning features
+
+- **ID**: US-011
+- **Description**: As a user, I want the game to be interactive and visually engaging, with features that help me learn and experiment with strategies.
+- **Acceptance criteria**:
+  - Animated transitions for moves, wins, and draws
+  - Interactive feedback on cell hover/tap
+  - Ability to review move history and use sandbox mode
+  - Guided learning mode with hints, explanations, and challenge puzzles
+  - Onboarding/tutorial overlays for new users
+  - Mini-quizzes and reflection prompts after games
+  - Customizable avatars and animated turn indicators
+  - Progress bars, victory/draw screens, and fun UI elements
+  - Sound effects and micro-interactions
+  - Achievements, streaks, and player stats
+
+---
+
+**See also:** [Development Plan](docs/plan.md) | [README](../README.md)
