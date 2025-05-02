@@ -7,22 +7,22 @@
 [![Vite](https://img.shields.io/badge/Vite-646cff?logo=vite&logoColor=white)](https://vitejs.dev/)
 
 ## Table of Contents
-1. [Overview](#overview-)
-2. [Quick Start](#quick-start-)
-3. [Goals](#goals-)
-4. [Features](#features-)
-5. [Architecture & Tech Stack](#architecture--tech-stack-)
-6. [Game Rules & Mechanics](#game-rules--mechanics-)
-7. [UI/UX & Animation Libraries](#uiux--animation-libraries-)
-8. [Development & Project Structure](#development--project-structure-)
-9. [Onboarding & Accessibility](#onboarding--accessibility-)
-10. [Contribution Guide](#contribution-guide-)
-11. [FAQ](#faq-)
-12. [Contact & Support](#contact--support-)
+1. [Overview](#overview)
+2. [Quick Start](#quick-start)
+3. [Goals](#goals)
+4. [Features](#features)
+5. [Architecture & Tech Stack](#architecture--tech-stack)
+6. [Game Rules & Mechanics](#game-rules--mechanics)
+7. [UI/UX & Animation Libraries](#uiux--animation-libraries)
+8. [Development & Project Structure](#development--project-structure)
+9. [Onboarding & Accessibility](#onboarding--accessibility)
+10. [Contribution Guide](#contribution-guide)
+11. [FAQ](#faq)
+12. [Contact & Support](#contact--support)
 
 ---
 
-## Overview 🏆
+## Overview
 
 TicTacToe Remix is a web-based, real-time, learning-focused game that reimagines the classic Tic Tac Toe for 3–4 players. It features larger boards, modern UI/UX, and interactive learning enhancements. Built with React, Convex, and Tailwind CSS, it demonstrates how to create collaborative, real-time web apps using modern technologies.
 
@@ -32,7 +32,7 @@ TicTacToe Remix is a web-based, real-time, learning-focused game that reimagines
 
 ---
 
-## Quick Start 🚀
+## Quick Start
 
 1. **Clone the repository:**
    ```sh
@@ -52,7 +52,7 @@ TicTacToe Remix is a web-based, real-time, learning-focused game that reimagines
 
 ---
 
-## Goals 🎯
+## Goals
 
 ### Business Goals
 - 🚀 Showcase Convex's real-time sync and collaborative capabilities
@@ -66,7 +66,7 @@ TicTacToe Remix is a web-based, real-time, learning-focused game that reimagines
 
 ---
 
-## Features ✨
+## Features
 
 - 👨‍👩‍👧‍👦 **3–4 Player Support:** Play on 4x4 (3 players) or 5x5 (4 players) boards
 - 🔄 **Real-Time Multiplayer:** All moves and state changes sync instantly
@@ -83,7 +83,7 @@ TicTacToe Remix is a web-based, real-time, learning-focused game that reimagines
 
 ---
 
-## Architecture & Tech Stack 🏗️
+## Architecture & Tech Stack
 
 ### System Overview
 - 💻 **Frontend:** React (TypeScript), Vite, Tailwind CSS
@@ -108,7 +108,7 @@ TicTacToe Remix is a web-based, real-time, learning-focused game that reimagines
 
 ---
 
-## Game Rules & Mechanics 🎲
+## Game Rules & Mechanics
 
 - 👥 **Player Count:** 3 (4x4 board) or 4 (5x5 board)
 - 🏆 **Win Condition:**
@@ -123,7 +123,7 @@ TicTacToe Remix is a web-based, real-time, learning-focused game that reimagines
 
 ---
 
-## UI/UX & Animation Libraries 🎨
+## UI/UX & Animation Libraries
 
 ### UI Libraries
 - 🧩 **ShadCn UI:** For foundational, accessible, composable components (Button, Input, Dialog, Menu)
@@ -166,7 +166,7 @@ TicTacToe Remix is a web-based, real-time, learning-focused game that reimagines
 
 ---
 
-## Development & Project Structure 🗂️
+## Development & Project Structure
 
 ### Directory Layout
 - `app/` – Frontend (React, Vite, Tailwind, Framer Motion, Radix UI, React-bits)
@@ -192,7 +192,7 @@ TicTacToe Remix is a web-based, real-time, learning-focused game that reimagines
 
 ---
 
-## Onboarding & Accessibility 🧑‍🏫♿
+## Onboarding & Accessibility
 
 ### Onboarding
 - 🧑‍🏫 First-time users see an interactive tutorial (React-bits + Framer Motion)
@@ -207,7 +207,7 @@ TicTacToe Remix is a web-based, real-time, learning-focused game that reimagines
 
 ---
 
-## Contribution Guide 🤝
+## Contribution Guide
 
 1. 🥢 **Fork and clone the repo**
 2. 📦 **Install dependencies:** `pnpm install`
@@ -221,7 +221,7 @@ TicTacToe Remix is a web-based, real-time, learning-focused game that reimagines
 
 ---
 
-## FAQ ❓
+## FAQ
 
 **Q: How do I play?**
 A: 🕹️ Sign in anonymously, create or join a game, and take turns placing your marker. Get 3 or 4 in a row to win!
@@ -243,7 +243,7 @@ A: ♿ The app supports keyboard navigation, high-contrast colors, and reduced m
 
 ---
 
-## Contact & Support 📬
+## Contact & Support
 
 For questions, suggestions, or support, please [open an issue](https://github.com/your-org/tictactoe-remix/issues) or contact the maintainers via GitHub.
 

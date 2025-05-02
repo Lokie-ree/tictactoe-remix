@@ -73,7 +73,7 @@ TicTacToe Remix is a real-time, multiplayer version of Tic Tac Toe that supports
 | Auth/Error          | Framer Motion (fade/slide), static background | Clean, accessible, minimal                                 |
 
 ## 1. Project Setup 🏗️
-**Progress: 16/20 tasks complete**
+**Progress: 20/20 tasks complete**
 
 - ✅ **Repository Configuration**
   - ✅ Initialize Git repository
@@ -96,10 +96,10 @@ TicTacToe Remix is a real-time, multiplayer version of Tic Tac Toe that supports
   - ✅ Set up Vite with React and TypeScript
   - ✅ Configure Tailwind CSS
   - ✅ Set up directory structure for components, pages, etc.
-  - ⬜ Install and configure Framer Motion
-  - ⬜ Install and configure ShadCn UI
-  - ⬜ Install and configure React Bits
-  - ⬜ Set up lucide-react for icons
+  - ✅ Install and configure Framer Motion
+  - ✅ Install and configure ShadCn UI
+  - ✅ Install and configure React Bits
+  - ✅ Set up lucide-react for icons
 
 - ⬜ **CI/CD Pipeline**
   - ⬜ Configure GitHub Actions or similar CI/CD tool
