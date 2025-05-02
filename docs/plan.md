@@ -1,4 +1,4 @@
-# TicTacToe Remix - Development Plan 📝
+# TicTacToe Remix - Development Plan
 
 _Last updated: May 2, 2025_
 
