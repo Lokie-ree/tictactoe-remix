@@ -7,18 +7,18 @@
 [![Vite](https://img.shields.io/badge/Vite-646cff?logo=vite&logoColor=white)](https://vitejs.dev/)
 
 ## Table of Contents
-1. [Overview](#overview-)
-2. [Quick Start](#quick-start-)
-3. [Goals](#goals-)
-4. [Features](#features-)
-5. [Architecture & Tech Stack](#architecture--tech-stack-)
-6. [Game Rules & Mechanics](#game-rules--mechanics-)
-7. [UI/UX & Animation Libraries](#uiux--animation-libraries-)
-8. [Development & Project Structure](#development--project-structure-)
-9. [Onboarding & Accessibility](#onboarding--accessibility-)
-10. [Contribution Guide](#contribution-guide-)
-11. [FAQ](#faq-)
-12. [Contact & Support](#contact--support-)
+1. [Overview](#overview)
+2. [Quick Start](#quick-start)
+3. [Goals](#goals)
+4. [Features](#features)
+5. [Architecture & Tech Stack](#architecture--tech-stack)
+6. [Game Rules & Mechanics](#game-rules--mechanics)
+7. [UI/UX & Animation Libraries](#uiux--animation-libraries)
+8. [Development & Project Structure](#development--project-structure)
+9. [Onboarding & Accessibility](#onboarding--accessibility)
+10. [Contribution Guide](#contribution-guide)
+11. [FAQ](#faq)
+12. [Contact & Support](#contact--support)
 
 ---
 
@@ -126,10 +126,10 @@ TicTacToe Remix is a web-based, real-time, learning-focused game that reimagines
 ## UI/UX & Animation Libraries 🎨
 
 ### UI Libraries
-- 🧩 **Radix UI:** For dialogs, menus, popovers, tooltips, and other primitives
-- ✨ **React-bits:** For onboarding, achievements, and celebratory UI
+- 🧩 **ShadCn UI:** For foundational, accessible, composable components (Button, Input, Dialog, Menu)
+- ✨ **React Bits:** For playful, animated, and celebratory UI (onboarding, achievements, win/draw, etc.)
 - 🎨 **Tailwind CSS:** For all styling and layout
-- 🔔 **Heroicons/Phosphor Icons:** For icons
+- 🖼️ **lucide-react:** For all iconography (player markers, status indicators, navigation, etc.)
 
 ### Animation
 - 🎞️ **Framer Motion:**
@@ -139,12 +139,30 @@ TicTacToe Remix is a web-based, real-time, learning-focused game that reimagines
   - Move history transitions
   - Onboarding/tutorial overlays
   - Micro-interactions (button presses, hover/tap feedback)
+- ✨ **React Bits:**
+  - Animated backgrounds (Aurora, Hyperspeed, Ball Pit, etc.)
+  - Animated lists, cards, counters, and celebratory overlays
+  - Subtle, always-on effects for gameplay; over-the-top, skippable effects for celebrations
 - 🔊 **Sound Effects:** (e.g., Howler.js or use-sound) for moves, wins, achievements
+
+### Color Palette
+- **Primary:** #7C3AED (Violet 600, Tailwind)
+- **Secondary:** #F59E42 (Orange 400, Tailwind)
+- **Success:** #10B981 (Emerald 500, Tailwind)
+- **Warning:** #FBBF24 (Amber 400, Tailwind)
+- **Error:** #EF4444 (Red 500, Tailwind)
+- **Background:** #F3F4F6 (Gray 100, Tailwind)
+- **Surface:** #F3F4F6 (Gray 100, Tailwind; light mode, gentle/low-glare) / #1F2937 (Gray 800, for dark mode)
+- **Text:** #111827 (Gray 900, Tailwind) / #F9FAFB (Gray 50, for dark mode)
+- **Gradients:** Violet → Blue, Orange → Pink (for backgrounds and animated elements)
+
+> Note: Light mode uses a gentle, low-glare gray background (#F3F4F6) for surface elements instead of pure white, to reduce eye strain and improve comfort.
 
 ### Accessibility
 - ⌨️ All interactive elements are keyboard accessible
 - 🌀 Animations respect `prefers-reduced-motion`
 - 🟦 High color contrast and ARIA labels for screen readers
+- High-contrast mode and light/dark mode supported via a global theme provider
 
 ---
 
