@@ -7,18 +7,18 @@
 [![Vite](https://img.shields.io/badge/Vite-646cff?logo=vite&logoColor=white)](https://vitejs.dev/)
 
 ## Table of Contents
-1. [Overview](#overview)
-2. [Quick Start](#quick-start)
-3. [Goals](#goals)
-4. [Features](#features)
-5. [Architecture & Tech Stack](#architecture--tech-stack)
-6. [Game Rules & Mechanics](#game-rules--mechanics)
-7. [UI/UX & Animation Libraries](#uiux--animation-libraries)
-8. [Development & Project Structure](#development--project-structure)
-9. [Onboarding & Accessibility](#onboarding--accessibility)
-10. [Contribution Guide](#contribution-guide)
-11. [FAQ](#faq)
-12. [Contact & Support](#contact--support)
+1. [Overview](#overview-)
+2. [Quick Start](#quick-start-)
+3. [Goals](#goals-)
+4. [Features](#features-)
+5. [Architecture & Tech Stack](#architecture--tech-stack-)
+6. [Game Rules & Mechanics](#game-rules--mechanics-)
+7. [UI/UX & Animation Libraries](#uiux--animation-libraries-)
+8. [Development & Project Structure](#development--project-structure-)
+9. [Onboarding & Accessibility](#onboarding--accessibility-)
+10. [Contribution Guide](#contribution-guide-)
+11. [FAQ](#faq-)
+12. [Contact & Support](#contact--support-)
 
 ---
 
