@@ -1,6 +1,6 @@
 # PRD: TicTacToe Remix 🎲✨
 
-_Last updated: May 1, 2023_
+_Last updated: May 2, 2025_
 _Status: In Progress_
 
 **Related docs:** [Development Plan](docs/plan.md) | [README](../README.md)
@@ -24,14 +24,14 @@ The application uses Convex as its backend to provide real-time updates and sync
 
 To align with modern learning game principles and create a more engaging experience, the following features are planned:
 
-- 🎞️ **Animated Game Board**: Smooth transitions for marker placement, turn changes, and win/draw highlights.
-- 🖱️ **Interactive Feedback**: Hover/tap previews, cell highlights, and celebratory effects for wins/draws.
-- ⏮️ **Move History & Exploration**: Timeline to review previous moves and board states; sandbox mode for experimentation.
+- 🎞️ **Animated Game Board**: Smooth transitions for marker placement, turn changes, and win/draw highlights (using React Bits, Framer Motion, and custom components).
+- 🖱️ **Interactive Feedback**: Hover/tap previews, cell highlights, and celebratory effects for wins/draws (React Bits, Framer Motion).
+- ⏮️ **Move History & Exploration**: Timeline to review previous moves and board states; sandbox mode for experimentation (Animated List, Glass Icons).
 - 🧑‍🏫 **Guided Learning Mode**: Challenge puzzles, tiered hints, and post-game explanations to foster learning by doing.
 - 🧑‍💻 **Onboarding & Tutorials**: Interactive walkthrough for new users, explaining rules and mechanics.
 - 📝 **Mini-Quizzes & Reflections**: Quick quizzes and prompts after games to reinforce learning and encourage reflection.
-- 🧑‍🎨 **Custom Avatars & Colors**: Player customization for avatars and marker colors, with animated turn indicators.
-- 📊 **Visual Storytelling**: Progress bars, victory/draw screens, and fun UI elements to create a narrative arc.
+- 🧑‍🎨 **Custom Avatars & Colors**: Player customization for avatars and marker colors, with animated turn indicators (lucide-react, custom components).
+- 📊 **Visual Storytelling**: Progress bars, victory/draw screens, and fun UI elements to create a narrative arc (React Bits, Framer Motion).
 - 💥 **Micro-Interactions**: Sound effects, subtle animations, and easter eggs for delight.
 - 🏅 **Achievements & Rewards**: Badges, streaks, and stats to motivate continued play and mastery.
 
@@ -161,18 +161,19 @@ To align with modern learning game principles and create a more engaging experie
 - 🕒 Ensure game state consistency even with network delays
 
 ### 5.4. UI/UX highlights
-- 🎨 Color-coded player markers for easy visual differentiation (red, blue, green, gold)
-- 🎞️ Animated transitions for moves, wins, and draws
-- 🖱️ Interactive feedback on cell hover/tap
-- ⏮️ Move history timeline and sandbox mode
+- 🎨 Color-coded player markers for easy visual differentiation (red, blue, green, gold; see color palette below)
+- 🎞️ Animated transitions for moves, wins, and draws (React Bits, Framer Motion)
+- 🖱️ Interactive feedback on cell hover/tap (Framer Motion, React Bits)
+- ⏮️ Move history timeline and sandbox mode (Animated List, Glass Icons)
 - 🧑‍🏫 Guided learning overlays, hints, and explanations
-- 🧑‍🎨 Customizable avatars and animated turn indicators
-- 📊 Progress bars and visual storytelling elements
+- 🧑‍🎨 Customizable avatars and animated turn indicators (lucide-react, custom components)
+- 📊 Progress bars and visual storytelling elements (React Bits, Framer Motion)
 - 🔄 Real-time updates without requiring page refreshes
 - 📱 Responsive design that works on various screen sizes
 - 🏷️ Clear game status indicators (waiting, playing, finished)
 - 🧭 Simple, intuitive UI with minimal learning curve
-- 👀 Visual indicators for current player's turn
+- 👀 Visual indicators for current player's turn (Variable Proximity, True Focus)
+- ♿ Accessibility: Keyboard navigation, ARIA labels, reduced motion, high-contrast mode
 
 ---
 
@@ -219,6 +220,54 @@ Alex is a casual gamer who wants to play a quick game with two friends during th
 - 🎨 Tailwind CSS for styling
 - 🟦 TypeScript for type safety
 - ⚡ Vite for frontend development and building
+- 🧩 ShadCn UI for foundational, accessible, composable components
+- 🖼️ lucide-react for iconography
+- ✨ React Bits for playful, animated, and celebratory effects
+- 🎬 Framer Motion for smooth transitions and custom animation logic
+
+### 8.1.1 UI Architecture & Visual Design
+
+#### Hybrid Component Strategy
+- **ShadCn UI**: Foundational, accessible, composable components (Button, Input, Dialog, Menu)
+- **lucide-react**: All iconography (player markers, status indicators, navigation, etc.)
+- **Custom Atomic Components**: Game-specific or highly unique UI needs (animated player markers, custom game cards, celebratory overlays)
+- **React Bits**: Playful, animated, and celebratory effects (see table below)
+- **Framer Motion**: Smooth transitions and custom animation logic
+- **Tailwind CSS**: Utility-first styling and theming
+
+#### Color Palette
+- **Primary:** #7C3AED (Violet 600, Tailwind)
+- **Secondary:** #F59E42 (Orange 400, Tailwind)
+- **Success:** #10B981 (Emerald 500, Tailwind)
+- **Warning:** #FBBF24 (Amber 400, Tailwind)
+- **Error:** #EF4444 (Red 500, Tailwind)
+- **Background:** #F3F4F6 (Gray 100, Tailwind)
+- **Surface:** #F3F4F6 (Gray 100, Tailwind; light mode, gentle/low-glare) / #1F2937 (Gray 800, for dark mode)
+- **Text:** #111827 (Gray 900, Tailwind) / #F9FAFB (Gray 50, for dark mode)
+- **Gradients:** Violet → Blue, Orange → Pink (for backgrounds and animated elements)
+
+> Note: Light mode uses a gentle, low-glare gray background (#F3F4F6) for surface elements instead of pure white, to reduce eye strain and improve comfort.
+
+#### Accessibility & Theming
+- All interactive elements are keyboard navigable and ARIA-labeled
+- All animated elements respect reduced motion settings
+- High-contrast mode and light/dark mode supported via a global theme provider
+
+#### Rationale
+- Avoid deep coupling to any single UI library for flexibility and open-source friendliness
+- Ensure accessibility, maintainability, and playful, modern design
+
+#### React Bits & Animation Mapping Table
+| Screen/Flow         | React Bits/Animation Used                | Notes                                                      |
+|---------------------|------------------------------------------|------------------------------------------------------------|
+| Landing Page        | Aurora/Hyperspeed (background), Rotating/Gradient Text, Count Up, Glass Icons | Subtle, playful intro effects                              |
+| Game Listing        | Animated List, Tilted/Pixel Card, Grid Motion/Squares (background) | Playful, animated game entries                             |
+| Game Creation       | Counter, Flowing Menu/Gooey Nav, Text Pressure | Animated player count, playful buttons                     |
+| Game Board          | Variable Proximity/True Focus (turn), Pixel Transition (cell), Ball Pit (background), Glass Icons | Subtle, clear, animated gameplay                           |
+| Move History        | Animated List, Glass Icons                | Timeline, move icons                                       |
+| Celebration (Win/Draw) | Splash Cursor, Ribbons, Star Border, Aurora/Hyperspeed (intense), Count Up, Gradient Text | Over-the-top, skippable/dismissible celebratory effects    |
+| Navigation          | Gooey Nav, Flowing Menu, Framer Motion    | Playful, smooth navigation                                 |
+| Auth/Error          | Framer Motion (fade/slide), static background | Clean, accessible, minimal                                 |
 
 ### 8.2. Data storage & privacy
 - 🗄️ Game state stored in Convex database

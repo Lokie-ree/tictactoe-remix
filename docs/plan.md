@@ -1,6 +1,6 @@
 # TicTacToe Remix - Development Plan 📝
 
-_Last updated: May 1, 2025_
+_Last updated: May 2, 2025_
 
 _Status: In Progress_
 
@@ -28,6 +28,50 @@ TicTacToe Remix is a real-time, multiplayer version of Tic Tac Toe that supports
 
 ---
 
+## UI Architecture & Visual Design
+
+### Hybrid Component Strategy
+- **ShadCn UI**: Used for foundational, accessible, and composable components (e.g., Button, Input, Dialog, Menu).
+- **lucide-react**: Used for all iconography (player markers, status indicators, navigation, etc.).
+- **Custom Atomic Components**: Built for game-specific or highly unique UI needs (e.g., animated player markers, custom game cards, celebratory overlays).
+- **React Bits**: Used for playful, animated, and celebratory effects (see table below for mapping).
+- **Framer Motion**: Used for smooth transitions and custom animation logic.
+- **Tailwind CSS**: Used for utility-first styling and theming.
+
+### Color Palette
+- **Primary:** #7C3AED (Violet 600, Tailwind)
+- **Secondary:** #F59E42 (Orange 400, Tailwind)
+- **Success:** #10B981 (Emerald 500, Tailwind)
+- **Warning:** #FBBF24 (Amber 400, Tailwind)
+- **Error:** #EF4444 (Red 500, Tailwind)
+- **Background:** #F3F4F6 (Gray 100, Tailwind)
+- **Surface:** #F3F4F6 (Gray 100, Tailwind; light mode, gentle/low-glare) / #1F2937 (Gray 800, for dark mode)
+- **Text:** #111827 (Gray 900, Tailwind) / #F9FAFB (Gray 50, for dark mode)
+- **Gradients:** Violet → Blue, Orange → Pink (for backgrounds and animated elements)
+
+> Note: Light mode uses a gentle, low-glare gray background (#F3F4F6) for surface elements instead of pure white, to reduce eye strain and improve comfort.
+
+### Accessibility & Theming
+- All interactive elements are keyboard navigable and ARIA-labeled.
+- All animated elements respect reduced motion settings.
+- High-contrast mode and light/dark mode supported via a global theme provider.
+
+### Rationale
+- Avoid deep coupling to any single UI library for flexibility and open-source friendliness.
+- Ensure accessibility, maintainability, and playful, modern design.
+
+### React Bits & Animation Mapping Table
+| Screen/Flow         | React Bits/Animation Used                | Notes                                                      |
+|---------------------|------------------------------------------|------------------------------------------------------------|
+| Landing Page        | Aurora/Hyperspeed (background), Rotating/Gradient Text, Count Up, Glass Icons | Subtle, playful intro effects                              |
+| Game Listing        | Animated List, Tilted/Pixel Card, Grid Motion/Squares (background) | Playful, animated game entries                             |
+| Game Creation       | Counter, Flowing Menu/Gooey Nav, Text Pressure | Animated player count, playful buttons                     |
+| Game Board          | Variable Proximity/True Focus (turn), Pixel Transition (cell), Ball Pit (background), Glass Icons | Subtle, clear, animated gameplay                           |
+| Move History        | Animated List, Glass Icons                | Timeline, move icons                                       |
+| Celebration (Win/Draw) | Splash Cursor, Ribbons, Star Border, Aurora/Hyperspeed (intense), Count Up, Gradient Text | Over-the-top, skippable/dismissible celebratory effects    |
+| Navigation          | Gooey Nav, Flowing Menu, Framer Motion    | Playful, smooth navigation                                 |
+| Auth/Error          | Framer Motion (fade/slide), static background | Clean, accessible, minimal                                 |
+
 ## 1. Project Setup 🏗️
 **Progress: 16/20 tasks complete**
 
@@ -53,9 +97,9 @@ TicTacToe Remix is a real-time, multiplayer version of Tic Tac Toe that supports
   - ✅ Configure Tailwind CSS
   - ✅ Set up directory structure for components, pages, etc.
   - ⬜ Install and configure Framer Motion
-  - ⬜ Install and configure Radix UI
-  - ⬜ Install and configure React-bits
-  - ⬜ Set up Heroicons/Phosphor Icons
+  - ⬜ Install and configure ShadCn UI
+  - ⬜ Install and configure React Bits
+  - ⬜ Set up lucide-react for icons
 
 - ⬜ **CI/CD Pipeline**
   - ⬜ Configure GitHub Actions or similar CI/CD tool
@@ -149,8 +193,8 @@ TicTacToe Remix is a real-time, multiplayer version of Tic Tac Toe that supports
 
 - ✅ **Component Library**
   - ✅ Create atomic UI components (buttons, inputs, etc.)
-  - ⬜ Set up Radix UI integration
-  - ⬜ Configure React-bits components
+  - ⬜ Set up ShadCn UI integration
+  - ⬜ Configure React Bits components
   - ⬜ Design system tokens (colors, spacing, typography)
 
 - ⬜ **Routing System**
@@ -219,10 +263,10 @@ TicTacToe Remix is a real-time, multiplayer version of Tic Tac Toe that supports
   - ⬜ Build dismissable/skippable structure
 
 - ⬜ **Enhanced Visuals**
-  - ⬜ Add animations for marker placement
-  - ⬜ Implement turn transition animations
-  - ⬜ Create win/draw celebration effects
-  - ⬜ Design hover/tap feedback for cells
+  - ⬜ Add animations for marker placement (React Bits, Framer Motion)
+  - ⬜ Implement turn transition animations (React Bits, Framer Motion)
+  - ⬜ Create win/draw celebration effects (React Bits, Framer Motion)
+  - ⬜ Design hover/tap feedback for cells (Framer Motion)
   - ⬜ Implement sound effects
 
 - ⬜ **Accessibility Features**
