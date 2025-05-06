@@ -2,6 +2,7 @@ import { useMutation, useQuery } from "convex/react";
 import { api } from "../../convex/_generated/api";
 import { Id } from "../../convex/_generated/dataModel";
 import { useState } from "react";
+import { Button } from "@/components/ui/button";
 
 export function GameList({ onSelectGame }: { onSelectGame: (id: Id<"games">) => void }) {
   const games = useQuery(api.games.listGames) || [];
@@ -13,39 +14,39 @@ export function GameList({ onSelectGame }: { onSelectGame: (id: Id<"games">) => 
     <div className="flex flex-col gap-4">
       {!creating ? (
         <div className="flex gap-4 justify-center">
-          <button
-            className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+          <Button
+            variant="default"
             onClick={() => setCreating(true)}
           >
             Create New Game
-          </button>
+          </Button>
         </div>
       ) : (
-        <div className="flex gap-4 justify-center">
-          <button
-            className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+        <div className="flexflex-col gap-6 space-x-4 justify-center">
+          <Button
+            variant="default"
             onClick={async () => {
               const game = await createGame({ playerCount: 3 });
               onSelectGame(game);
             }}
           >
-            Create 3 Player Game
-          </button>
-          <button
-            className="bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600"
+            3 Players
+          </Button>
+          <Button
+            variant="default"
             onClick={async () => {
               const game = await createGame({ playerCount: 4 });
               onSelectGame(game);
             }}
           >
-            Create 4 Player Game
-          </button>
-          <button
-            className="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600"
+            4 Players
+          </Button>
+          <Button
+            variant="outline"
             onClick={() => setCreating(false)}
           >
             Cancel
-          </button>
+          </Button>
         </div>
       )}
 
@@ -62,15 +63,15 @@ export function GameList({ onSelectGame }: { onSelectGame: (id: Id<"games">) => 
                 {game.players.length}/{game.playerCount} Players
               </p>
             </div>
-            <button
-              className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+            <Button
+              variant="default"
               onClick={async () => {
                 await joinGame({ gameId: game._id });
                 onSelectGame(game._id);
               }}
             >
               Join Game
-            </button>
+            </Button>
           </div>
         ))}
         {games.length === 0 && (
